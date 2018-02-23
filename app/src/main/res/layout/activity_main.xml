@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:text="@string/title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:text="@string/objectiveSubTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:text="@string/objective" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/editNameText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question1" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question3" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question4" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question5" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question6" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question7" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question8" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question9" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer9"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/question10" />
+
+            <RadioGroup
+                android:id="@+id/radioButtonGroup10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <RadioButton
+                    android:id="@+id/RB_almostNeverTrue10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert1"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyNotTrue10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert2"/>
+                <RadioButton
+                    android:id="@+id/RB_occasionallyTrue10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert3"/>
+                <RadioButton
+                    android:id="@+id/RB_usuallyTrue10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert4"/>
+                <RadioButton
+                    android:id="@+id/RB_almostAlwaysTrue10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/likert5"/>
+
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/swithch10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchPadding="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/showExplanation"
+                android:onClick="isSwitchTriggered"/>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/secondaryText"
+                android:visibility="gone"
+                android:text="@string/answer10"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#512DA8"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:text="@string/button"
+            android:onClick="analyze"/>
+
+    </LinearLayout>
+
+</ScrollView>

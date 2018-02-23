@@ -1,0 +1,127 @@
+<resources>
+    // App name
+    <string name="app_name">Software Engineering Quiz</string>
+
+    // Title
+    <string name="title">How likely you are to enjoy work as a software developer</string>
+
+    // Quiz Objective
+    <string name="objectiveSubTitle">Quiz Objective</string>
+    <string name="objective">This is a personality quiz to know if coding could be right for you;
+        here are 10 signs that aren\'t always accounted for in academic tests. Be honest answering it,
+        you would be only lying to you\'re self if not.</string>
+
+    // EditText View
+    // User Name
+    <string name="editNameText">Name</string>
+
+    // Question 1
+    <string name="question1">Are you a problem-solving person?</string>
+    <string name="answer1">Lots of people will simply tolerate problems without
+        looking for a proactive way to solve them, particularly if tolerating
+        the problem is easier. If you don\'t take this approach, but actually
+        enjoy the challenge of solving problems of all kinds, then that\'s a great
+        sign that you could be suited to software development. If, in your desire
+        to solve problems, you also take into account realistic constraints, such
+        as timeframes and budgets, then this could be a real asset in your search
+        for a career.</string>
+
+    // Question 2
+    <string name="question2">Do you have a passion for strategy games?</string>
+    <string name="answer2">Yes, it can be true that gaming is good for you,
+        particularly where strategy games are concerned. These help hone your
+        ability to make decisions based on a number of relevant factors, taking
+        into account both short and long-term consequences. As well as computer
+        games, those who enjoy offline games like chess, bridge or risk, could
+        also have an underlying aptitude for programming. At Net-a-porter, for
+        example, we even have a weekly games club.</string>
+
+    // Question 3
+    <string name="question3">Do you have a musical mind?</string>
+    <string name="answer3">While the evidence for the correlation between music
+        and maths is still in debate, it seems commonplace for those with musical
+        talent to have mathematical abilities too. In our team, there are numerous
+        coders who either compose music, sing, or play an instrument.</string>
+
+    // Question 4
+    <string name="question4">Do You have a talent for winning arguments?</string>
+    <string name="answer4">If have a logical approach to arguing your points in a
+        structured way means that you frequently win over your opponents, this could
+        be a sign that you have the systematic thinking needed for software
+        development.</string>
+
+    // Question 5
+    <string name="question5">Do you love making things?</string>
+    <string name="answer5">You can get the same sense of satisfaction from making
+        something in the virtual world as you can in the physical world. Indeed,
+        in the digital world, you aren\'t constrained by practicalities like materials
+        and space, so imagination is your only limit. Having a natural curiosity for
+        how things work, and how to make them work better, is a good indication of a
+        nascent software developer.</string>
+
+    // Question 6
+    <string name="question6">Are you a people person?</string>
+    <string name="answer6">Contrary to the stereotype of the IT team hidden away from
+        the rest of the company, working as a developer can actually involve a great
+        deal of interaction with others across the business. This means that an enjoyment
+        of communicating and an ability to explain things in a way that is easily
+        understood by others, are both really important.</string>
+
+    // Question 7
+    <string name="question7">Would you like to know more about the theory of computer science?</string>
+    <string name="answer7">While you may not have digested the full history of computer science,
+        an interest in the theory behind software engineering is an important aspect of a coder\'s
+        skillset. You don\'t want to spend your time re-inventing the wheel, so being interested
+        in what others have discovered, and being prepared to build on those foundations, will fast-track
+        your potential achievements.</string>
+
+    // Question 8
+    <string name="question8">Are you a team player?</string>
+    <string name="answer8">Coding itself is a very collaborative process; continuously reviewing
+        and redefining code with others helps you to shake out bugs, makes your work more likely
+        to meet users\'s needs and is one of the best ways to learn. Developers therefore need to
+        enjoy working together and should be prepared to study, critique and improve one another's work.</string>
+
+    // Question 9
+    <string name="question9">Are you intrinsically motivated?</string>
+    <string name="answer9">Putting some amateur psychology to use, it seems to be true that the
+        best developers are intrinsically motivated. This means they take their reward and
+        motivation from the process of finding a solution to a problem, or creating something
+        innovative in itself. In other words, developers often do what they do for the love of
+        doing it, rather than just being paid to do it.</string>
+
+    // Question 10
+    <string name="question10">Do you love technology?</string>
+    <string name="answer10">This is fairly obvious, but it is worth re-iterating that if you want
+        to work in software engineering, you need to have an appreciation for the amazing
+        possibilities that technology brings to the world. Being interested in how you can harness
+        the potential of technology, for whichever company you want to work in, will definitely
+        stand you in good stead, and is a sure sign you are on the right career track for success
+        in coding.</string>
+
+    // Likert Scale
+    // RadioButton Group
+    <string name="likert1">Almost Never True</string>
+    <string name="likert2">Usually Not True</string>
+    <string name="likert3">Occasionally True</string>
+    <string name="likert4">Usually True</string>
+    <string name="likert5">Almost Always True</string>
+
+    // SwitchView
+    <string name="showExplanation">Show Explanation</string>
+
+    // ButtonView Text
+    <string name="button">Analyze</string>
+
+    /Message constructor
+    <string name="messageIntro">Thank you for being honest</string>
+    <string name="messageLikert1">, your answers indicate that you will strongly dislike a career in software engineering</string>
+    <string name="messageLikert2">, your answers indicate that you will moderately dislike a career in software engineering</string>
+    <string name="messageLikert3">, your answers indicate that you will may enjoy a career in software engineering</string>
+    <string name="messageLikert4">, your answers indicate that you will moderately enjoy a career in software engineering</string>
+    <string name="messageLikert5">, your answers indicate that you will strongly enjoy a career in software engineering</string>
+
+
+
+
+</resources>
